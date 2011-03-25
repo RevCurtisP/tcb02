@@ -58,3 +58,21 @@ Example: `LET H = HEIGHT()`
 *WIDTH()* returns the width of the graphics screen in pixels. Any arguments are ignored.
 
 Example: `LET W = WIDTH()`
+
+= Constants =
+
+*#BLACK* Byte value for the color Black.
+
+*#WHITE* Byte value for the color White.
+
+*#RED* Byte value for the color Red.
+
+*#CYAN* Byte value for the color Cyan.
+
+*#MAGENTA* Byte value for the color Magenta.
+
+*#GREEN* Byte value for the color Green.
+
+*#BLUE* Byte value for the color Blue.
+
+*#YELLOW* Byte value for the color Yellow.
