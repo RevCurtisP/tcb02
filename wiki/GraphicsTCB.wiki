@@ -1,0 +1,60 @@
+#summary Graphics Macro Include File
+#labels macro
+
+= Introduction =
+
+GRAPHICS.TCB includes commands and functions for pixel level graphics.
+
+= Usage =
+
+`INCLUDE "GRAPHICS"
+
+= Commands =
+
+*BOX* draws a box with one corner at the first column and row and the opposite corner and row.
+
+Example: `BOX X0,Y0,X1,Y1`
+
+*CLEAR* Clears the graphics screen. The background color should be set before clearing the screen.
+
+Example `CLEAR`
+
+*COLORS* sets the foreground, border, and background color, respectively. 
+
+Example: `COLORS #WHITE, #BLACK, #BLUE`
+
+*GRAPHICS* Sets screen to graphics mode. This should be executed before any other graphics commands.
+
+Example: `GRAPHICS`
+
+*LINE* draws a line from one column and row to another.
+
+Example: `LINE X0,Y0,X1,Y1`
+
+*PLOT* sets the pixel at the designated column and row to the foreground color).
+
+Example: `PLOT X,Y`
+
+*UNBOX* erases box with one corner at the first column and row and the opposite corner and row.
+
+Example: `UNBOX X0,Y0,X1,Y1`
+
+*UNLINE* erases a line from one column and row to another.
+
+Example: `UNLINE X0,Y0,X1,Y1`
+
+*UNPLOT* sets the pixel at the designated column and row to the background color).
+
+Example: `UNPLOT X,Y`
+
+= Functions =
+
+*HEIGHT()* returns the height of the graphics screen in pixels. Any arguments are ignored.
+
+Example: `LET H = HEIGHT()`
+
+*POINT()* checks the pixel at the specified column and row, returning zero if it is set to the background color, or a non-zero value if it is not.
+
+*WIDTH()* returns the width of the graphics screen in pixels. Any arguments are ignored.
+
+Example: `LET W = WIDTH()`
